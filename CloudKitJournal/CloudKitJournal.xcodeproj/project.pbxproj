@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C60217E252BCA53003A229A /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C60217D252BCA53003A229A /* Entry.swift */; };
+		3C602181252BCE2F003A229A /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C602180252BCE2F003A229A /* EntryController.swift */; };
+		3C602184252BD8A1003A229A /* EntryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C602183252BD8A1003A229A /* EntryError.swift */; };
+		3C8E847B252D655200ECE91F /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E847A252D655200ECE91F /* EntryListTableViewController.swift */; };
+		3C8E847E252D6AD500ECE91F /* EntryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E847D252D6AD500ECE91F /* EntryDetailViewController.swift */; };
+		3C8E8481252D735300ECE91F /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8E8480252D735300ECE91F /* DateExtension.swift */; };
 		85858B84242D081200C5ECA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85858B83242D081200C5ECA2 /* AppDelegate.swift */; };
 		85858B86242D081200C5ECA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85858B85242D081200C5ECA2 /* SceneDelegate.swift */; };
 		85858B8B242D081200C5ECA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85858B89242D081200C5ECA2 /* Main.storyboard */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C60217D252BCA53003A229A /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		3C602180252BCE2F003A229A /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		3C602183252BD8A1003A229A /* EntryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryError.swift; sourceTree = "<group>"; };
+		3C8E847A252D655200ECE91F /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
+		3C8E847D252D6AD500ECE91F /* EntryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailViewController.swift; sourceTree = "<group>"; };
+		3C8E8480252D735300ECE91F /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		85858B80242D081200C5ECA2 /* CloudKitJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudKitJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85858B83242D081200C5ECA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85858B85242D081200C5ECA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +51,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C602176252BC6F3003A229A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C60217C252BC718003A229A /* ModelControllers */,
+				3C60217B252BC714003A229A /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3C602177252BC6FB003A229A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3C60217A252BC70D003A229A /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3C602178252BC6FF003A229A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3C60217D252BCA53003A229A /* Entry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3C602179252BC702003A229A /* HelpersAndExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				3C602183252BD8A1003A229A /* EntryError.swift */,
+				3C8E8480252D735300ECE91F /* DateExtension.swift */,
+			);
+			path = HelpersAndExtensions;
+			sourceTree = "<group>";
+		};
+		3C60217A252BC70D003A229A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				85858B89242D081200C5ECA2 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		3C60217B252BC714003A229A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C8E847A252D655200ECE91F /* EntryListTableViewController.swift */,
+				3C8E847D252D6AD500ECE91F /* EntryDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3C60217C252BC718003A229A /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C602180252BCE2F003A229A /* EntryController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
 		85858B77242D081200C5ECA2 = {
 			isa = PBXGroup;
 			children = (
@@ -59,8 +130,11 @@
 		85858B82242D081200C5ECA2 /* CloudKitJournal */ = {
 			isa = PBXGroup;
 			children = (
+				3C602179252BC702003A229A /* HelpersAndExtensions */,
+				3C602178252BC6FF003A229A /* Models */,
+				3C602177252BC6FB003A229A /* Views */,
+				3C602176252BC6F3003A229A /* Controllers */,
 				85858B9D242D0A8B00C5ECA2 /* CloudKitJournal.entitlements */,
-				85858B89242D081200C5ECA2 /* Main.storyboard */,
 				85858B97242D082D00C5ECA2 /* Resources */,
 			);
 			path = CloudKitJournal;
@@ -113,8 +187,8 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
-				ORGANIZATIONNAME = "Zebadiah Watson";
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					85858B7F242D081200C5ECA2 = {
 						CreatedOnToolsVersion = 11.4;
@@ -157,7 +231,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C8E847E252D6AD500ECE91F /* EntryDetailViewController.swift in Sources */,
+				3C8E8481252D735300ECE91F /* DateExtension.swift in Sources */,
+				3C60217E252BCA53003A229A /* Entry.swift in Sources */,
+				3C602184252BD8A1003A229A /* EntryError.swift in Sources */,
+				3C8E847B252D655200ECE91F /* EntryListTableViewController.swift in Sources */,
 				85858B84242D081200C5ECA2 /* AppDelegate.swift in Sources */,
+				3C602181252BCE2F003A229A /* EntryController.swift in Sources */,
 				85858B86242D081200C5ECA2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +290,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -270,6 +351,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -303,15 +385,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CloudKitJournal/CloudKitJournal.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4J7B9732LY;
+				DEVELOPMENT_TEAM = 268JS24689;
 				INFOPLIST_FILE = "$(SRCROOT)/CloudKitJournal/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = CloudKitJournal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koceja.dvmtn.CloudKitJournal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -322,15 +406,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CloudKitJournal/CloudKitJournal.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4J7B9732LY;
+				DEVELOPMENT_TEAM = 268JS24689;
 				INFOPLIST_FILE = "$(SRCROOT)/CloudKitJournal/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = CloudKitJournal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koceja.dvmtn.CloudKitJournal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
